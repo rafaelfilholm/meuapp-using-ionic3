@@ -1,0 +1,46 @@
+<!--
+  Generated template for the IntroPage page.
+  
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content>
+  
+  <ion-slides pager>
+    
+    <ion-slide class="slide_image" padding>
+      <img src="assets/imgs/slides/slide1.png">
+      <h2>Melhores restaurantes</h2>
+      <p>
+        Os melhores restaurantes estão aqui.
+      </p>
+      <p>
+        Não demore. <b>Peça já o seu!</b>
+      </p>
+      <button ion-button (click)="goToTabsPage()">Pular Introdução</button>
+    </ion-slide>
+    
+    <ion-slide class="slide_image" padding>
+      <img src="assets/imgs/slides/slide2.jpg">
+      <h2>Cardápios variados</h2>
+      <p>
+        Temos cardápios tanto para os <b>vegetarianos</b>, como para os que gostam mais de <b>gordurinhas</b>.
+      </p>
+      <button ion-button (click)="goToTabsPage()">Pular Introdução</button>
+    </ion-slide>
+    
+    <ion-slide class="slide_image" padding>
+      <img src="assets/imgs/slides/slide3.png">
+      <h2>Preços inacreditáveis</h2>
+      <p>
+        Preços que cabem no seu bolso, <b>acessível</b> a todos
+      </p>
+      <button ion-button (click)="goToTabsPage()">Pular Introdução</button>
+    </ion-slide>  
+    <ion-slide class="slide_image" padding>
+      Não perca tempo <a (click)="goToTabsPage()">Comece agora mesmo</a>
+    </ion-slide>
+    
+  </ion-slides>
+</ion-content>
