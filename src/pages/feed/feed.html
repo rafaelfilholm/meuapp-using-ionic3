@@ -19,32 +19,32 @@
       <ion-avatar item-start>
         <img src="assets/imgs/eu.jpg">
       </ion-avatar>
-      <h2 class="feed_title"> {{ nome_usuario }} </h2>
-      <p class="feed_date">25 Novembro, 2017</p>
+      <h2 class="feed_title">{{ obj_feed.titulo }}</h2>
+      <p class="feed_date">{{ obj_feed.data }}</p>
     </ion-item>
     
     <img src="assets/imgs/card.jpg">
     
     <ion-card-content>
-      <p>Criar aplicações com Ionic é incrivelmente Fácil.</p>
+      <p>{{obj_feed.descricao}}</p>
     </ion-card-content>
     
     <ion-row>
       <ion-col>
         <button ion-button icon-left clear small>
           <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
+          <div>{{obj_feed.qntd_likes}} Likes</div>
         </button>
       </ion-col>
       <ion-col>
         <button ion-button icon-left clear small>
           <ion-icon name="text"></ion-icon>
-          <div>4 Comentários</div>
+          <div>{{obj_feed.qntd_comments}} Comentários</div>
         </button>
       </ion-col>
       <ion-col center text-center>
         <ion-note>
-          {{  multi(2, 5) }} minutos atrás
+          {{obj_feed.tempo_post}}
         </ion-note>
       </ion-col>
     </ion-row>

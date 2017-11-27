@@ -15,10 +15,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FeedPage {
 
-  public nome_usuario:string = "Rafael Filho";
-
-  public multi(num: number, vezes: number): number{
-    return num * vezes;
+  public obj_feed = {
+    titulo: "Rafael Filho",
+    data: "27 de Novembro",
+    descricao: "Criar aplicações com Ionic é incrivelmente Fácil.",
+    qntd_likes: 12,
+    qntd_comments: 35,
+    tempo_post: "20 min atrás"
   }
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
